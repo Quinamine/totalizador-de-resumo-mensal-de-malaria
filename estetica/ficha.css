@@ -4,6 +4,9 @@ input {
     border-bottom: 1px solid var(--border-color);
 }
 
+input:focus {
+    border-bottom: 2px solid var(--primary-color) !important;
+}
 /* Container */
 :root {
     --max-width: 998px;
@@ -15,14 +18,9 @@ div.container {
     font-size: 15px;
 }
 
-@media print {
-    div.container {
-        margin-top: 0;
-    }
-}
-
 div.container > header {
     padding-left: 50px;
+    min-width: 801px;
 }
 
 /* CABECALHO */
@@ -46,15 +44,20 @@ div.republica span:first-child {
     font-weight: initial;
 }
 
+@media print {
+    div.republica span:first-child {
+        font-weight: bold;
+    }
+}
+
 div.republica span:first-child,
 div.republica span:nth-child(2) {
     font-family: serif, Georgia, 'Times New Roman', Times;
 }
 
 div.republica span:last-child {
-    color: #2573b5;
+    color: var(--primary-color);
 }
-
 
 div.geo div.flex-container {
     display: flex;
@@ -66,6 +69,7 @@ div.geo div.linha {
     grid-template-columns: 325px 375px;
     grid-column-gap: 15px;
     margin: 20px 0 10px 0;
+    min-height: 20px;
 }
 
 div.geo div.linha.l2 {
@@ -85,6 +89,10 @@ div.geo div.linha.l2 input {
 }
 
 /* FICHA */
+div.ficha {
+    min-width: 801px;
+}
+
 div.ficha span {
     display: flex;
     justify-content: center;
@@ -119,6 +127,16 @@ header div.col4 span:last-child {
     border-right: 1px solid var(--border-color);
 }
 
+div.emblema-e-republica {
+    position: relative;
+}
+
+div.emblema-e-republica span.mod {
+    position: absolute;
+    top: 70px;
+    right: 55px;
+    font-weight: bold;
+}
 /* Body */
 div.ficha div.body {
     display: grid;
@@ -130,6 +148,16 @@ div.col-de-indicadores,
 div.col-de-celulas-de-entrada {
     display: grid;
     grid-template-rows: repeat(8, 24px);
+}
+
+@media screen and (min-width: 425px) and (max-width: 700px) {
+    div.ficha span.indicadores,
+    div.col-de-indicadores {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        background-color: var(--yt);
+    }
 }
 
 div.col-de-indicadores span {
@@ -165,8 +193,13 @@ div.ficha footer span {
     border-left: 1px solid var(--border-color);
 }
 
+footer.linha-de-assinatura div {
+    margin-left: 10px;
+    min-height: 20px;
+}
+
 footer.linha-de-assinatura div:first-child {
-    margin: 20px 0 10px 0;
+    margin: 20px 0 10px 10px;
 }
 
 footer.linha-de-assinatura div:first-child input {
