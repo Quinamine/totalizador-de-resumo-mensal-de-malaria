@@ -204,6 +204,7 @@ footer.linha-de-assinatura div:first-child {
 
 footer.linha-de-assinatura div:first-child input {
     width: 254px;
+    font-weight: bold;
 }
 
 div.nota{width:801px;margin-bottom:20px;min-height:79px}@-moz-document url-prefix(){div.nota{min-height:96px}}@media screen and (max-width:998px){div.linha.nota{padding-left:0;padding-right:0}}div.nota textarea{font-family:san-serif,Arial,Helvetica;width:790px;padding:5px;line-height:1.5;border:1px solid var(--border-color)}@media print{div.col1.emblema-e-republica,div.container{visibility:visible}div.nota.no-print{display:none}div.nota textarea{padding:0}}div.nota textarea.bold{font-weight:700;border-color:transparent}div.nota textarea:focus{border:2px solid var(--blue)}
