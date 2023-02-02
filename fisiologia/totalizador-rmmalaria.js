@@ -24,6 +24,11 @@ const armazenamento = {
                 }
             })
             dadosAdicionais[i].value = localStorage.getItem(`trmmalaria-${dadosAdicionais[i].id}`);
+            if(dadosAdicionais[i].matches("#nota")) {
+                let dado = dadosAdicionais[i];
+                
+                dado.value.length > 0 ? dado.classList.add("bold") : dado.classList.remove("bold");
+            }
         }
     },
 
