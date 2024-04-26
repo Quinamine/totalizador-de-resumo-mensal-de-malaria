@@ -37,31 +37,31 @@
         <header class="header --no-print">
             <div class="layout-row header__row --display-flex-y-center">
                 <a href=index.html class=header__logo>
-                    Totalizador de Resumo <span class="logo-word--hide-on-screen-s">Mensal</span>
+                    Totalizador de Resumo <span class="logo__span--hide-on-screen-s">Mensal</span>
                     de Malária
                 </a>
                 <div role="navigation" class="header__nav --display-flex-y-center">
                     <ul class="header__nav__ul --display-flex-y-center">
-                        <li class="header__nav__li header__nav__li-realcartotais">
+                        <li class="header__nav__li header__nav__li--realcartotais">
                             <input type=checkbox id="checkbox-realcar-totais" class="header__checkbox header__child--cursor">
-                            <label for="checkbox-realcar-totais" class="header__label --display-flex-y-center header__child--cursor">
+                            <label for="checkbox-realcar-totais" class="header__nav__label --display-flex-y-center header__child--cursor">
                                 Realçar&nbsp;totais
                             </label>
                         <li class="header__nav__li">
-                            <button class="header__nav__btn header__nav__btn-esvaziar-ficha">Esvaziar ficha</button>
+                            <button class="header__nav__btn header__nav__btn--esvaziar-ficha">Esvaziar ficha</button>
                         <li class="header__nav__li">
-                            <button class="header__nav__btn header__nav__btn-imprimir">
+                            <button class="header__nav__btn header__nav__btn--imprimir">
                                 <span class="--hide-on-mobile header__child--cursor">Imprimir</span>
                                 <span class="--hide-on-desktop header__child--cursor">Salvar&nbsp;como&nbsp;PDF</span>
                             </button>
                         <li class="header__nav__li header__li--hide-on-mobile">
-                            <button class="header__nav__btn header__nav__btn-sobre">Sobre</button>
+                            <button class="header__nav__btn header__nav__btn--sobre">Sobre</button>
                         <li class="header__nav__li">
-                            <button class="header__nav__btn header__nav__btn-ajuda">
+                            <button class="header__nav__btn header__nav__btn--ajuda">
                                 Ajuda
                             </button>
                         <li class="header__nav__li header__li--hide-on-desktop">
-                            <button class="header__nav__btn header__nav__btn-partilhar">Partilhar...</button>
+                            <button class="header__nav__btn header__nav__btn--partilhar">Partilhar...</button>
                     </ul>
                 </div>
             </div>
@@ -86,29 +86,29 @@
                         <div class="ficha__linha-de-prov-e-distrito">
                             <div class=--display-flex-y-center>
                                 <label for=input-provincia>Província de</label>
-                                <input id=input-provincia list="datalist-provincias" class="input-adicional --border-b">
+                                <input id=input-provincia list="datalist-provincias" class="input-nao-celular --border-b --fw-700">
                                 <datalist id="datalist-provincias"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-distrito>Distrito de</label>
-                                <input id=input-distrito list="datalist-distritos" class="input-adicional --border-b">
+                                <input id=input-distrito list="datalist-distritos" class="input-nao-celular --border-b --fw-700">
                                 <datalist id="datalist-distritos"></datalist>
                             </div>
                         </div>
                         <div class="ficha__linha-de-us-mes-e-ano">
                             <div class=--display-flex-y-center>
                                 <label for=input-us>Unidade Sanitária:</label>
-                                <input id=input-us list="datalist-us" class="input-adicional --border-b">
+                                <input id=input-us list="datalist-us" class="input-nao-celular --border-b --fw-700">
                                 <datalist id="datalist-us"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-mes>Mês:</label>
-                                <input id=input-mes list="datalist-meses" class="input-adicional --border-b">
+                                <input id=input-mes list="datalist-meses" class="input-nao-celular --border-b --fw-700">
                                 <datalist id="datalist-meses"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-ano>Ano:</label>
-                                <input type=number min=0 id=input-ano list="datalist-ano" class="input-adicional --border-b">
+                                <input type=number min=0 id=input-ano list="datalist-ano" class="input-nao-celular --border-b --fw-700">
                                 <datalist id="datalist-ano"></datalist>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="grid-template-col-3 --border-t">
                                 <span class="--display-flex-xy-center --border-r">&lt;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">≥5 anos</span>
+                                <span class="--display-flex-xy-center --border-r">&ge;5 anos</span>
                                 <span class="--display-flex-xy-center --border-r">Total</span>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                             </div>
                             <div class="grid-template-col-3 --border-t">
                                 <span class="--display-flex-xy-center --border-r">&lt;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">≥5 anos</span>
+                                <span class="--display-flex-xy-center --border-r">&ge;5 anos</span>
                                 <span class="--display-flex-xy-center --border-r">Total</span>
                             </div>
                         </div>
@@ -232,49 +232,48 @@
                 <footer class=ficha__rodape>
                     <div class="ficha__rodape__linha ficha__rodape__linha-de-assinatura">
                         <label for=input-produzido-por>Produzido por:</label>
-                        <input id=input-produzido-por class="ficha__campo-de-assinatura input-adicional --border-b --fw-700">
+                        <input id=input-produzido-por class="ficha__campo-de-assinatura input-nao-celular --border-b --fw-700">
                     </div>
                     <div class="ficha__rodape__linha">
                         <label for=input-data>Data:</label>
-                        <input type=date id=input-data class="input-adicional --border-b --fw-700">
+                        <input type=date id=input-data class="input-nao-celular --border-b --fw-700">
                     </div>
                 </footer>
             </div>
 
             <div class="main__container-de-campo-de-nota layout-row">
-                <textarea class="main__campo-de-nota input-adicional input-adicional--font-light" id="input-comentarios" placeholder="Comentários sobre o resumo (S.O.S)..." rows=3></textarea>
+                <textarea class="main__campo-de-nota input-nao-celular input-nao-celular--font-light" id="input-comentarios" placeholder="Comentários sobre o resumo (S.O.S)..." rows=3></textarea>
             </div>
 
             <div class="reference-container --no-print">
                 <div class="layout-row reference-row">
                     <span class="reference-row__label">Indicador:</span> 
-                    <output class="reference-row__output reference-row__output-indicador --display-flex-xy-center"></output>
+                    <output class="reference-row__output reference-row__output--indicador --display-flex-y-center"></output>
 
                     <span class="reference-row__label">Faixa etária:</span> 
-                    <output class="reference-row__output reference-row__output-idade --display-flex-xy-center --fw-700"></output>
-
+                    <output class="reference-row__output reference-row__output--idade --display-flex-xy-center --fw-700"></output>
                 </div>
             </div>
         </main>
         
         <section class="dialog-boxes --no-print">
-            <div class="dialog-box-default dialog-box-alerta-sobre-aqd">
-                <h3 class="dialog-box-default__titulo">Totalizador de Resumo Mensal de Malária</h3>
+            <div class="dialog-box-default dialog-box-default--sobre-aqd">
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de Malária</h3>
                 <p class="dialog-box-default__p">
                     A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.
                 </p>
                 <div class="dialog-box-default__btn-container">
-                    <button class="dialog-box-default__btn dialog-box-aqd__btn">Entendi</button>
+                    <button class="dialog-box-default__btn dialog-box-default__btn--aqd">Entendi</button>
                 </div>
             </div>
 
-            <div class="dialog-box-default dialog-box-default--width-s">
-                <h3 class="dialog-box-default__titulo">Totalizador de Resumo Mensal de Malária</h3>
-                <p class="dialog-box-default__p dialog-box--width-s__console --display-flex-y-center">
+            <div class="dialog-box-default dialog-box-default--small">
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de Malária</h3>
+                <p class="dialog-box-default__p dialog-box-default__p--js-console --display-flex-y-center">
                     
                 </p>
                 <div class="dialog-box-default__btn-container">
-                    <button class=dialog-box-default__btn>Fechar <span class="btn__output-autoclose-time"></span></button>
+                    <button class=dialog-box-default__btn>Fechar <span class="dialog-box-default__output-autoclose-loop"></span></button>
                 </div>
             </div>
             <div class="dialog-box-esvaziar-ficha">
@@ -319,24 +318,24 @@
                         <label for=checkbox-comentarios>Comentários</label>
                 </ul>
                 <div class=dialog-box-esvaziar-ficha__btns-container>
-                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn-cancelar">Cancelar</button>
-                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn-confirmar">Confirmar</button>
+                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn--cancelar">Cancelar</button>
+                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn--confirmar">Confirmar</button>
                 </div>
             </div>
         </section>
 
         <section class="sessao-de-artigos --no-print">
-            <article class="artigo artigo-sobre" id="sobre">
-                <h2 class="artigo__titulo artigo__titulo-nivel-1">Visão geral sobre o totalizador</h2>
+            <article class="artigo artigo--sobre" id="sobre">
+                <h2 class="artigo__titulo artigo__titulo--nivel-1">Visão geral sobre o totalizador</h2>
                 <figure>
-                    <img alt="Totalizador de Resumo Mensal de Malária" src=imagens/totalizador-de-resumo-mensal-de-malaria.png class="artigo__img artigo-sobre__img">
+                    <img alt="Totalizador de Resumo Mensal de Malária" src=imagens/totalizador-de-resumo-mensal-de-malaria.png class="artigo__img artigo__img--sobre-o-tot">
                 </figure>
                 
                 <p>
                     O <b>Totalizador de Resumo Mensal de Malária</b> é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique.
                 </p>
 
-                <h3 class="artigo__titulo artigo__titulo-nivel-2">Objectivos</h3>
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
 
                 <ul class="artigo__lista artigo__ul">
                     <li>Calcular correcta e automaticamente os totais;</li>
@@ -345,7 +344,7 @@
                     <li >Expandir o acesso às fichas de resumos mensais, pois os <a href="https://quinamine.github.io/aderito-felix-quiinamine/paginas/portfolio.html" target="_blank">totalizadores</a> também constituem uma fonte universal de algumas fichas de resumos mensais para todos com acesso à internet.</li>
                 </ul>
 
-                <h3 class="artigo__titulo artigo__titulo-nivel-2 ">O que eu preciso dispor para, e como utilizar o totalizador?</h3>
+                <h3 class="artigo__titulo artigo__titulo--nivel-2 ">O que eu preciso dispor para, e como utilizar o totalizador?</h3>
 
                 <ul class="artigo__lista artigo__ul">
                     <li>Um telemóvel ou computador com acesso à internet.</li>
@@ -355,11 +354,11 @@
 
                 <p class="artigo__p--destaque">A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.</p>
 
-                <h3 class="artigo__titulo artigo__titulo-nivel-2">Qual é o destino dos dados que eu insiro?</h3>
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Qual é o destino dos dados que eu insiro?</h3>
 
                 <p>São guardados localmente (no navegador que estiver a usar), por meio de um recurso chamado <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Storage_API" target="_blank">Web Storage</a> e você tem total controle sobre esses, podendo mantê-los ou apagá-los por meio da opção "<b>Esvaziar ficha</b>" no menu do totalizador ou esvaziando o histórico (inclusíve os cookies) do seu navegador.</p>
 
-                <h3 class="artigo__titulo artigo__titulo-nivel-2">Vantagens do totalizador</h3>
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Vantagens do totalizador</h3>
 
                 <ul class="artigo__lista artigo__ul">
                     <li>Calcula automaticamente os totais;</li>
@@ -370,17 +369,17 @@
                     <li >Pode ser guardado como PDF.</li>
                 </ul>
 
-                <h3 class="artigo__titulo artigo__titulo-nivel-2">Limitações do totalizador</h3>
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Limitações do totalizador</h3>
                     
                 <ul class="artigo__lista artigo__ul">
                     <li>Não alerta sobre discrepância de dados, portanto, a análise da qualidade e lógica do resumo é inteiramente dependente do usuário;</li>
                     <li>Disponibilidade remota (é necessário um telemóvel ou computador com acesso à internet para ser acessado).</li>
                 </ul>
-                <button class="artigo__btn-fechar artigo-sobre__btn-fechar" title="Fechar">&times;</button>
+                <button class="artigo__btn-fechar artigo__btn-fechar--sobre" title="Fechar">&times;</button>
             </article>
 
-            <article class="artigo artigo-ajuda">
-                <h2 class="artigo__titulo artigo__titulo-nivel-1 artigo-ajuda__titulo-nivel-1">Ajuda e Procedimentos</h2>
+            <article class="artigo artigo--ajuda">
+                <h2 class="artigo__titulo artigo__titulo--nivel-1 artigo__titulo--border-b-thick">Ajuda e Procedimentos</h2>
 
                 <details>
                     <summary>Realçar totais</summary>
@@ -392,7 +391,7 @@
                     
                     <p>Permite também esvaziar campos adicionais (Província, Distrito, US, etc.) de forma seletiva. Para tal, na caixa de diálogo de confirmação, as "checkboxes" dos dados adicionais são, por padrão, marcadas com o sinal de "✔", indicando, desse modo, que o conteúdo contido nos respectivos campos será eliminado, mas caso queira manter a informação de um campo específico, basta desmarcá-lo clicando directamente sobre a ckeckbox ou sobre a sua descrição.</p> 
 
-                    <figure class="details__moldura details-esvaziar-ficha__moldura">
+                    <figure class="details__moldura details__moldura--esvaziar-ficha">
                         <img src="imagens/caixa-de-dialogo-para-esvaziamento-da-ficha.png" alt="Caixa de diálogo de esvaziamento da ficha" class="artigo__img"/>
 
                         <figcaption class="details__moldura__legenda"><b>Legenda:</b> Caixa de diálogo de esvaziamento da ficha. Neste caso, os campos de <b>Provínica, Distrito e Unidade Sanitária</b> seriam preservados (por ter suas checkboxes desmarcadas). Todos os outros cujas "checkboxes" estão marcadas, teriam seus campos esvaziados.</figcaption>
@@ -401,7 +400,7 @@
                 </details>
                 <details class="details-salvar-ficha-como-pdf">
                     <summary>Salvar ficha como PDF</summary>
-                    <h3 class="artigo__titulo artigo__titulo-nivel-2 details__titulo-nivel-2">No computador:</h3>
+                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--cor-discreta">No computador:</h3>
                     <ol class="artigo__lista artigo__ol">
                         <li>
                             Clique na opção <mark>Imprimir</mark> no menu do totalizador.
@@ -412,7 +411,7 @@
                             Por fim, clique em <mark>Salvar</mark> e escolha um destino no seu computador.
                     </ol>
 
-                    <h3 class="artigo__titulo artigo__titulo-nivel-2 details__titulo-nivel-2">No celular / tablet:</h3>
+                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--cor-discreta">No celular / tablet:</h3>
                     <ol class="artigo__lista artigo__ol">
                         <li>
                             Toque na opção <mark>Salvar como PDF</mark> no cabeçalho do totalizador.
@@ -440,19 +439,19 @@
                         </figure>
                     </ol>
                 </details>
-                <details class="artigo-ajuda__last-details details-motivo-de-red-cells">
+                <details class="artigo__details-motivo-de-red-cells">
                     <summary>Algumas células mudaram de cor de fundo para vermelho</summary>
                     <p>As células do totalizador têm um tamanho para conter, visivelmente, 8 algarismos no máximo, isto é, mostram valores até, no máximo, <span class="number-format">99999999</span>. Quando a célula recebe um número com mais de 8 algarismos, dá um alerta ao usuário ficando vermelha e, eventualmente, mostrando uma mensagem de texto com informação sobre a omissão dos algarismos e o real motivo.</p>
 
                     <p class="artigo__p artigo__p--destaque">Para um país como Moçambique, em que o número de habitantes é de pouco mais de 30 milhões (<a href="https://energypedia.info/wiki/Moçambique:_Informação_sobre_o_País" target="_blank">dados demográficos de 2019</a>), podemos presumir que, actualmente, nenhuma Unidade Sanitária tem um número mensal de dados, de algum indicador de qualquer que seja a sua natureza, acima de <span class="number-format">99999999</span>.</p>
                 </details>
-                <button class="artigo__btn-fechar artigo-ajuda__btn-fechar" title="Fechar">&times;</button>
+                <button class="artigo__btn-fechar artigo__btn-fechar--ajuda" title="Fechar">&times;</button>
             </article>
         </section>
         <footer class="footer --no-print">
             <div class="layout-row footer__row">
                 <nav class=footer__nav>
-                    <h4 class="footer__nav-title">Hiperligações para outros serviços afins</h4>
+                    <h4 class="footer__nav__title">Hiperligações para outros serviços afins</h4>
                     <ul>
                         <li>
                             <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-tuberculose/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de Tuberculose</a>
@@ -480,13 +479,13 @@
                             <a href=https://quinamin.github.io/requisicao-balancete/index.html target=_blank class="footer__nav-link">Requisição/Balancete</a>
                     </ul>
                 </nav>
-                <p class="footer__p footer__p-created-by">
+                <p class="footer__p footer__p--created-by">
                     Criado com atenção e 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;">Adérito Félix Quinamine</a>
                     | © <span class="footer__current-year"></span> - Totalizador de Resumo Mensal de Malária
                 </p>
                 <a href=#root class=footer__link-back-to-top>Voltar ao topo</a>
             </div>
-            <p class="footer__p footer__p-available-since">Disponível desde 17/01/2023. Última actualização: Abril/2024.</p>
+            <p class="footer__p footer__p--available-since">Disponível desde 17/01/2023. Última actualização: Abril/2024.</p>
         </footer>
         <div class="desfoque"></div>
     </body>

@@ -15,10 +15,10 @@ const backup = {
     },
     
     saveExtraInputs() {
-        const extraInputs = document.querySelectorAll(".input-adicional");
-        extraInputs.forEach( input => {
-            input.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-${input.id}`, input.value));
-            input.value = localStorage.getItem(`${keyPrefix}-${input.id}`);
+        const extraInputs = document.querySelectorAll(".input-nao-celular");
+        extraInputs.forEach( inputTarget => {
+            inputTarget.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-${inputTarget.id}`, inputTarget.value));
+            inputTarget.value = localStorage.getItem(`${keyPrefix}-${inputTarget.id}`);
         });
     }
 }

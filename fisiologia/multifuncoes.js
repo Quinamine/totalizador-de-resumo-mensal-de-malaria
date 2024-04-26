@@ -8,14 +8,14 @@ function desfoqueDoFundo(accao) {
 }
 
 function alertarSobre(msg) {
-    const dialogBoxDefault = document.querySelector(".dialog-box-default--width-s");
-    const dialogBoxDefault__console = dialogBoxDefault.querySelector(".dialog-box--width-s__console");
+    const dialogBoxDefault = document.querySelector(".dialog-box-default--small");
+    const dialogBoxDefault__console = dialogBoxDefault.querySelector(".dialog-box-default__p--js-console");
 
     dialogBoxDefault__console.textContent = msg;
 
     clearInterval(btnAutoCloseLoop);
     let time = 15;
-    const btn__outputTime = document.querySelector(".btn__output-autoclose-time");
+    const btn__outputTime = document.querySelector(".dialog-box-default__output-autoclose-loop");
     btn__outputTime.textContent = `(${time--}s)`;
     btnAutoCloseLoop = setInterval(() => {
         btn__outputTime.textContent = `(${time--}s)`;
@@ -60,7 +60,7 @@ function removerDestaqueDeRedCells() {
 const aqd = {
     mostrarAviso() {
         if(!sessionStorage.getItem(`${keyPrefix}-aviso-aqd`)) {
-            const avisoDeAQD = document.querySelector(".dialog-box-alerta-sobre-aqd");
+            const avisoDeAQD = document.querySelector(".dialog-box-default--sobre-aqd");
             setTimeout(() => avisoDeAQD.classList.add("--open"), 3000);
         }
     },
@@ -74,7 +74,7 @@ function actualizarAno() {
     const tempo = new Date();
     anoActual = tempo.getFullYear();
 
-    if(anoActual < 2022) anoActual = 2022;
+    if(anoActual < 2023) anoActual = 2023;
 
     const currentYearOutput = document.querySelector(".footer__current-year");
     currentYearOutput.textContent = anoActual;
@@ -100,18 +100,18 @@ function animarJanelaAberta(event) {
 let btnAutoCloseLoop;
 window.addEventListener("load", () => {
     const readonlyInputs = document.querySelectorAll("[readonly]");
-    readonlyInputs.forEach ( input => input.addEventListener("click", () => {
+    readonlyInputs.forEach ( inputTarget => inputTarget.addEventListener("click", () => {
         const readonlyInputsMsg = "Os totais estão inacessíveis para assegurar que não sejam modificados.";
         alertarSobre(readonlyInputsMsg);
     }));
 
     const gridInputs = document.querySelectorAll("[data-total]");
-    gridInputs.forEach (gi => gi.addEventListener("input", () => destacarCelulasSaturadas()));
+    gridInputs.forEach (gi => gi.addEventListener("input", destacarCelulasSaturadas));
     destacarCelulasSaturadas();
 
     
     aqd.mostrarAviso();
-    const dialogBoxAQD__btn = document.querySelector(".dialog-box-aqd__btn");
+    const dialogBoxAQD__btn = document.querySelector(".dialog-box-default__btn--aqd");
     dialogBoxAQD__btn.addEventListener("click", aqd.salvarCiencia);
 
     // Actualizar o ano 

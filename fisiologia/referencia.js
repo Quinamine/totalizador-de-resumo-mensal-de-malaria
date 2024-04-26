@@ -4,7 +4,7 @@ const referencia = {
     retornarIndicador(inputTarget) {
         const inputParent__childreen = inputTarget.parentElement.children;
         const indicadores = document.querySelectorAll(".ficha__indicador");
-        const indicadorOutput = document.querySelector(".reference-row__output-indicador");
+        const indicadorOutput = document.querySelector(".reference-row__output--indicador");
 
         let inputIndex;
         for (let i in inputParent__childreen) {
@@ -17,7 +17,7 @@ const referencia = {
     },
 
     retornarFaixaEtaria(inputTarget) {
-        const faixaEtariaOutput = document.querySelector(".reference-row__output-idade");
+        const faixaEtariaOutput = document.querySelector(".reference-row__output--idade");
 
         let faixaEtaria = inputTarget.parentElement.dataset.faixaetaria;
         faixaEtariaOutput.value = faixaEtaria;
