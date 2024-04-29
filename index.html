@@ -5,12 +5,12 @@
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <title>Totalizador de Resumo Mensal de Malária</title>
     <meta content="index, follow" name=robots>
-    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique." name=description>
+    <meta content="Serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique." name=description>
     <meta content="Totalizador de Resumo Mensal de Malária, Totalizador de Relatório Mensal de Malária, Ficha de Resumo Mensal de Malária." name=keywords>
     <meta content="Adérito Félix Quinamine" name=author>
     <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/index.html property=og:url>
     <meta content="Totalizador de Resumo Mensal de Malária" property=og:title>
-    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique." property=og:description>
+    <meta content="Serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique." property=og:description>
     <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/imagens/totalizador-de-resumo-mensal-de-malaria.png property=og:image>
     <link href=favicon.ico rel="shortcut icon" type=image/x-icon>
     <link href=anatomia/reset.css rel=stylesheet>
@@ -22,14 +22,14 @@
     <script src="fisiologia/db.js"></script>
     <script src="fisiologia/referencia.js"></script>
     
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-0WQ21LVG42" async></script>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W64CH52Q5W"></script>
     <script>
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        window.dataLayer = window.dataLayer || [],
-        gtag("js", new Date),
-        gtag("config", "G-0WQ21LVG42")
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W64CH52Q5W');
     </script>
     <noscript>O seu navegador está com o JavaScript desabilitado e isso bloqueia as funcionalidades do Totalizador. Habilite-o nas configurações do navegador e recarregue a página.</noscript>
 
@@ -332,7 +332,7 @@
                 </figure>
                 
                 <p>
-                    O <b>Totalizador de Resumo Mensal de Malária</b> é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+                    O <b>Totalizador de Resumo Mensal de Malária</b> é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de Malária, por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de Malária actualmente vigente no Serviço Nacional de Saúde em Moçambique.
                 </p>
 
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
@@ -349,7 +349,7 @@
                 <ul class="artigo__lista artigo__ul">
                     <li>Um telemóvel ou computador com acesso à internet.</li>
                     <li>Ter colhido os dados de todos os indicadores da ficha nas fontes primárias (livro(s) de registo de consultas) da sua Unidade Sanitária.</li>
-                    <li>E por fim, preencher os dados nas células correspondentes quanto ao indicador e variáveis (sexo e faixa etária), e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.</li>
+                    <li>E por fim, preencher os dados nas células correspondentes quanto ao indicador e variável (faixa etária), e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.</li>
                 </ul>
 
                 <p class="artigo__p--destaque">A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.</p>
@@ -372,7 +372,7 @@
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Limitações do totalizador</h3>
                     
                 <ul class="artigo__lista artigo__ul">
-                    <li>Não alerta sobre discrepância de dados, portanto, a análise da qualidade e lógica do resumo é inteiramente dependente do usuário;</li>
+                    <li>Não alerta sobre discrepância de dados, portanto, a análise da concordância dos dados é inteiramente dependente do usuário;</li>
                     <li>Disponibilidade remota (é necessário um telemóvel ou computador com acesso à internet para ser acessado).</li>
                 </ul>
                 <button class="artigo__btn-fechar artigo__btn-fechar--sobre" title="Fechar">&times;</button>
@@ -383,7 +383,7 @@
 
                 <details>
                     <summary>Realçar totais</summary>
-                    <p>Adiciona um fundo cinza a todas as células dos totais. Estas têm o acesso interdito e a funcionalidade de realçá-las, permite facilmente distinguir estas de outras células. Muito útil em dispositivos móveis.</p>
+                    <p>Adiciona um fundo cinzento a todas as células dos totais. Estas têm o acesso interdito e a funcionalidade de realçá-las, permite facilmente distinguir estas de outras células. Muito útil em dispositivos móveis.</p>
                 </details>
                 <details>
                     <summary>Esvaziar ficha</summary>

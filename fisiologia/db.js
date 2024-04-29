@@ -815,8 +815,8 @@ const moz = {
 }
 
 function formatarString(str) {
-    str = str.replaceAll(/[-()\.\s]/gi, "").toLowerCase();
     str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    str = str.replaceAll(/\W/g, "").toLowerCase();
     return str;
 }
 

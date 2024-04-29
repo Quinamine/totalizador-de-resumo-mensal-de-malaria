@@ -1,6 +1,5 @@
 ﻿.ficha {
-    max-width: var(--layout-width);
-    min-width: var(--layout-width);
+    width: var(--layout-width);
     margin: 30px auto 10px;
     line-height: 1.5;
 }

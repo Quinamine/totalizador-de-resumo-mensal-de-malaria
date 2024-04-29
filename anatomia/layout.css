@@ -333,12 +333,6 @@ input[data-totalgeraleixox]:focus,
     position: relative;
 }
 
-@media screen and (max-width: 1023px) {
-    .footer {
-        padding-top: 20px;
-    }
- }
-
 .footer__row {
     display: flex;
     flex-direction: column;
@@ -447,10 +441,16 @@ input[data-totalgeraleixox]:focus,
     .reference-row {
         grid-template-columns: 1fr 70px;
         grid-column-gap: 3px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .reference-row__output {
         margin: 0px;
+    }
+
+    .reference-row__output--indicador {
+        padding-left: 15px;
     }
     
     .reference-row__label {
