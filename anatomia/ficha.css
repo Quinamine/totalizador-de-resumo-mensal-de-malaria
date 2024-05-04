@@ -52,6 +52,7 @@
     width: 300px;
     overflow: hidden;
     margin-left: 4px;
+    text-align: left;
 }
 
 .ficha__body__header {
@@ -62,7 +63,7 @@
     border-top: 1px solid var(--border-color)
 }
 
-.grid-template-col-3 {
+.grid-template-cols-3 {
     display: grid;
     grid-template-columns: repeat(3,70px);
     grid-template-rows: 23.5px;
@@ -74,7 +75,7 @@
     color: var(--cor-de-risco);
 }
 
-.grid-template-col-8 {
+.grid-template-cols-8 {
     display: grid;
     grid-template-columns: 40px 340px repeat(6,70px)
 }
@@ -102,10 +103,6 @@
     display: grid;
     grid-template-columns: 70px;
     grid-template-rows: repeat(8,24px);
-}
-
-.celula-np {
-    background-color: var(--fullblack);
 }
 
 .ficha__legenda {
