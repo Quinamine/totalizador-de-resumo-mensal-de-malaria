@@ -874,7 +874,7 @@ function listarUSs() {
 }
 
 
-function sugerMesEanoActuais() {
+function sugerirMesEanoActuais() {
     const mesDatalist = document.getElementById("datalist-meses");
     const anoDatalist = document.getElementById("datalist-ano");
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -890,7 +890,7 @@ window.addEventListener("load", () => {
     listarProvincias();
     listarDistritos();
     listarUSs();
-    sugerMesEanoActuais();
+    sugerirMesEanoActuais();
 
     const inputProv = document.getElementById("input-provincia");
     inputProv.addEventListener("input", listarDistritos);

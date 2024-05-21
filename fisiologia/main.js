@@ -2,21 +2,21 @@
 
 const backup = {
     saveGridInputs() {
-        const gridInputs = document.querySelectorAll("[data-total]");
+        const inputsCelulares = document.querySelectorAll("[data-total]");
 
-        for (let i = 0; i < gridInputs.length; i++) {
+        for (let i = 0; i < inputsCelulares.length; i++) {
             
-            gridInputs[i].addEventListener("input", () => {
-                localStorage.setItem(`${keyPrefix}-input${i}`, gridInputs[i].value);
+            inputsCelulares[i].addEventListener("input", () => {
+                localStorage.setItem(`${keyPrefix}-input${i}`, inputsCelulares[i].value);
             });
-            gridInputs[i].value = localStorage.getItem(`${keyPrefix}-input${i}`);
+            inputsCelulares[i].value = localStorage.getItem(`${keyPrefix}-input${i}`);
         }
         
     },
     
     saveExtraInputs() {
-        const extraInputs = document.querySelectorAll(".input-nao-celular");
-        extraInputs.forEach( inputTarget => {
+        const inputsNaoCelulares = document.querySelectorAll(".input-nao-celular");
+        inputsNaoCelulares.forEach( inputTarget => {
             inputTarget.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-${inputTarget.id}`, inputTarget.value));
             inputTarget.value = localStorage.getItem(`${keyPrefix}-${inputTarget.id}`);
         });
@@ -24,23 +24,25 @@ const backup = {
 }
 
 function totalizar(inputTarget) {
-    inputTarget.classList.add(`${inputTarget.dataset.total}`);
-    const celulasPorTotalizar = document.querySelectorAll(`.${inputTarget.dataset.total}`);
-    const totaloutput = document.querySelector(`.${inputTarget.dataset.totaloutput}`);
+    const classNameDosOperandos = inputTarget.dataset.total;
+    inputTarget.classList.add(`${classNameDosOperandos}`);
+    
+    const operandos = document.querySelectorAll(`.${classNameDosOperandos}`);
+    const celulaDeSaida = document.querySelector(`.${inputTarget.dataset.totaloutput}`);
 
     let soma = 0;
-    for(const c of celulasPorTotalizar) {
-        soma += Number(c.value);
+    for(const operando of operandos) {
+        soma += Number(operando.value);
     }
-    totaloutput.value = soma;
+    celulaDeSaida.value = soma;
 }
 
 
 function escutarEventos() {
-    const gridInputs = document.querySelectorAll("[data-total]");
-    gridInputs.forEach( gi => {
-        gi.addEventListener("input", () => totalizar(gi));
-        gi.value !== "" && totalizar(gi);
+    const inputsCelulares = document.querySelectorAll("[data-total]");
+    inputsCelulares.forEach( inputCelular => {
+        inputCelular.addEventListener("input", () => totalizar(inputCelular));
+        inputCelular.value !== "" && totalizar(inputCelular);
     });
 }
 
