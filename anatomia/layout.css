@@ -7,7 +7,6 @@
     --cor-do-rodape: #f0f0f0;
     --cor-de-risco: #dd0000;
     --fullred: #ff0000;
-     /*#dce4f4;*/
     --yt: #ffffff;
     --fullblack: #000000;
     --black--alpha-5: rgba(0, 0, 0, .5);
@@ -26,7 +25,6 @@
     --greenyellow:greenyellow;
     --brown: brown;
     --reference-bgc: var(--black--alpha-8);
-
     /* Tamanhos */
     --layout-width: 800px;
     --input-font-size: 15px;
@@ -35,10 +33,8 @@
 
 @media print {
     :root {
-        --cor-de-risco: var(--fullblack);
         --cor-de-borda: var(--fullblack);
         --cor-de-texto: var(--fullblack);
-        --blue--light: var(--fullblack);
         --gray--4: var(--fullblack)
         --gray--a: var(--yt);
         --gray--d: var(--yt)
@@ -548,20 +544,20 @@ input[data-total]:focus,
     font-weight: 700;
     color: var(--gray--5);
     box-shadow: 0 4px 9px var(--gray--a);
-    border-radius: 3px;
+    border-radius: 5px;
     position: relative;
 }
 
 .artigo__p--destaque::before {
     content: "i";
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: 11px;
+    padding: 0 7px;
     border-radius: 50%;
     border: 1px solid var(--purple);
     background-color: var(--blue--light);
     color: var(--yt);
     position: absolute;
-    left: 12px;
+    left: 15px;
 }
 
 .artigo__lista {
