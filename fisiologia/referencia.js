@@ -4,7 +4,7 @@ const referencia = {
     retornarIndicador(inputTarget) {
         const inputTargetAndSiblings = inputTarget.parentElement.children;
         const indicadores = document.querySelectorAll(".ficha__indicador");
-        const indicadorOutput = document.querySelector(".reference-row__output--indicador");
+        const indicadorOutput = document.querySelector(".reference__output--indicador");
 
         let inputIndex;
         for (let i in inputTargetAndSiblings) {
@@ -17,14 +17,14 @@ const referencia = {
     },
 
     retornarFaixaEtaria(inputTarget) {
-        const faixaEtariaOutput = document.querySelector(".reference-row__output--idade");
+        const faixaEtariaOutput = document.querySelector(".reference__output--idade");
 
         let faixaEtaria = inputTarget.parentElement.dataset.faixaetaria;
         faixaEtariaOutput.value = faixaEtaria;
     },
 
     retornarVazio() {
-        const outputs = document.querySelectorAll(".reference-row__output");
+        const outputs = document.querySelectorAll(".reference__output");
         for (const o of outputs) o.value = "";
     }
 }
@@ -34,7 +34,7 @@ function events() {
     inputsCelulares.forEach( inputCelular => {
         inputCelular.addEventListener("focus", () => {
             referencia.retornarIndicador(inputCelular);
-            referencia.retornarFaixaEtariaEsexo(inputCelular);
+            referencia.retornarFaixaEtaria(inputCelular);
         });
     });
 

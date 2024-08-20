@@ -3,36 +3,30 @@
     margin: 30px auto 10px;
     line-height: 1.5;
 }
-
 .ficha__header {
     padding-left: 50px;
     min-width: 800px;
     position: relative;
 }
-
 .ficha__moldura-de-emblema {
     max-width: 214.19px;
 }
-
 .ficha__span-descricao-de-emblema {
     display: block;
     line-height: 1.3;
     font-family: serif,Georgia,'Times New Roman',Times;
 }
-
 .ficha__titulo {
     color: var(--blue--light);
     font-weight: 700;
     line-height: 1.3;
 }
-
 .ficha__mod-sis-m01 {
     position: absolute;
     top: 70px;
     right: 55px;
     font-weight: 700
 }
-
 .ficha__linha-de-prov-e-distrito,
 .ficha__linha-de-us-mes-e-ano {
     display: grid;
@@ -41,20 +35,19 @@
     margin: 20px 0 10px;
     min-height: 21px
 }
-
 .ficha__linha-de-us-mes-e-ano {
     grid-template-columns: 392px 200px 128px;
     margin: 0;
     min-height: 23px;
 }
-
+.ficha__header div {
+    overflow: hidden;
+}
 .ficha__header input {
     width: 300px;
-    overflow: hidden;
     margin-left: 4px;
     text-align: left;
 }
-
 .ficha__body__header {
     display: grid;
     grid-template-columns: 40px 340px repeat(2,calc(70px * 3));
@@ -62,34 +55,28 @@
     font-weight: 700;
     border-top: 1px solid var(--border-color)
 }
-
 .grid-template-cols-3 {
     display: grid;
     grid-template-columns: repeat(3,70px);
     grid-template-rows: 23.5px;
     max-height: 23.5px;
 }
-
 .titulo-de-col--destaque-padrao {
     background-color: hsl(0deg 0% 75%);
     color: var(--cor-de-risco);
 }
-
 .grid-template-cols-8 {
     display: grid;
     grid-template-columns: 40px 340px repeat(6,70px)
 }
-
 .grid-template-rows-8 {
     display: grid;
     grid-template-rows: repeat(8,24px)
 }
-
 .ficha__indicador {
     padding-left: 8px;
     padding-right: 4px;
 }
-
 @media screen and (min-width: 480px) and (max-width:700px) {
     .ficha__col-de-indicadores,
     .container-do-titulo-indicadores {
@@ -98,13 +85,28 @@
         background-color: var(--yt)
     }
 }
-
 .ficha__col-de-inputs {
     display: grid;
     grid-template-columns: 70px;
     grid-template-rows: repeat(8,24px);
 }
-
+[data-total]:focus,
+.input-nao-celular:focus {
+    border-bottom: 2px solid var(--blue);
+    background-color: var(--greenyellow);
+}
+@media screen {
+    .input--realcar-totais {
+        background-color: var(--gray--c);
+    }
+}
+.input--bg-color-danger {
+    background-color: var(--cor-de-risco);
+    color: var(--yt)
+}
+.input--bg-color-dark {
+    background-color: var(--fullblack);
+}
 .ficha__legenda {
     justify-content: left;
     font-size: 12.5px;
@@ -112,17 +114,14 @@
     padding-left: 10px;
     min-height: 24px;
 }
-
 .ficha__rodape__linha  {
     margin-left: 10px;
     margin-bottom: 10px;
     min-height: 20px
 }
-
 .ficha__rodape__linha-de-assinatura {
     margin: 20px 0 10px 10px
 }
-
 .ficha__campo-de-assinatura {
     width: 254px;
 }

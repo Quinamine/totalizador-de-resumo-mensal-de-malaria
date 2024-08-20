@@ -4,15 +4,14 @@ const menu = {
         const totais = document.querySelectorAll("[readonly]");
         for (const t of totais) {
             if(condicao) {
-                t.classList.add("--realcar-totais");
+                t.classList.add("input--realcar-totais");
                 localStorage.setItem(`${keyPrefix}-realcarTotais`, true);
             } else {
-                t.classList.remove("--realcar-totais");
+                t.classList.remove("input--realcar-totais");
                 localStorage.removeItem(`${keyPrefix}-realcarTotais`);
             }
         }
     },
-
 
     esvaziarFicha() {
         return {  
@@ -38,7 +37,6 @@ const menu = {
             fecharDialogBox() {
                 menu.esvaziarFicha().dialogBox.classList.remove("--open");
                 desfoqueDoFundo("focar");
-                removerDestaqueDeRedCells();
             },
 
             confirmar() {
@@ -59,12 +57,13 @@ const menu = {
                     }
                 }
                 menu.esvaziarFicha().fecharDialogBox();
+                removerDestaqueDeRedCells();
             }
         }
     },
 
     imprimirFicha() {
-        const comentarios = document.querySelector(".main__campo-de-nota");
+        const comentarios = document.querySelector(".main__campo-de-comentarios");
         comentarios.value === "" ? comentarios.parentElement.classList.add("--no-print") : comentarios.parentElement.classList.remove("--no-print");
         window.print()
     },
@@ -78,7 +77,7 @@ const menu = {
         artigoSobre.classList.add("--open") : 
         artigoAjuda.classList.add("--open");
 
-        body.classList.add("--overflow-h");
+        body.classList.add("body--overflow-h");
         desfoqueDoFundo("desfocar");
     },
 
@@ -97,7 +96,7 @@ const menu = {
             artigoAjuda.classList.remove("--open");
         }
 
-        body.classList.remove("--overflow-h");
+        body.classList.remove("body--overflow-h");
         desfoqueDoFundo("focar");
     }
 }
@@ -142,7 +141,7 @@ function eventos() {
     const btnAbrirSobre = document.querySelector(".header__menu__btn--sobre");
     btnAbrirSobre.addEventListener("click", () => menu.abrirArtigo("sobre"));
 
-    const btnFecharSobre = document.querySelector(".artigo__btn-fechar--sobre")
+    const btnFecharSobre = document.querySelector(".artigo__btn-x--fechar-sobre")
     btnFecharSobre.addEventListener("click", () => menu.fecharArtigo("sobre"));
 
     window.addEventListener("resize", () => {
@@ -155,18 +154,18 @@ function eventos() {
         if(itsMobile && articleIsOpen) {
             desfoqueDoFundo("focar");
             location.href = `index.html#${artigoSobre.id}`;
-            body.classList.remove("--overflow-h");
+            body.classList.remove("body--overflow-h");
             
         } else if(!itsMobile && articleIsOpen) {
             desfoqueDoFundo("desfocar");
-            body.classList.add("--overflow-h");
+            body.classList.add("body--overflow-h");
         }       
     });
 
     const btnAbrirAjuda = document.querySelector(".header__menu__btn--ajuda");
     btnAbrirAjuda.addEventListener("click", () => menu.abrirArtigo("ajuda"));
 
-    const btnFecharAjuda = document.querySelector(".artigo__btn-fechar--ajuda")
+    const btnFecharAjuda = document.querySelector(".artigo__btn-x--fechar-ajuda")
     btnFecharAjuda.addEventListener("click", () => menu.fecharArtigo("ajuda"));
 
     // PARTILHAR 
