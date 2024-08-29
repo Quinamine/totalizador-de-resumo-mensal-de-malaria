@@ -5,6 +5,7 @@
     --cor-de-realce: #dce4f4;
     --cor-do-rodape: #f0f0f0;
     --cor-de-risco: #dd0000;
+    --heart-color: #f97171;
     --fullred: #ff0000;
     --yt: #ffffff;
     --fullblack: #000000;
@@ -271,6 +272,9 @@
     color: var(--gray)
 }
 
+.footer__p__heart {
+    color: var(--heart-color);
+}
 /* LINHA DE REFERENCIA */
 .reference {
     position: fixed;
