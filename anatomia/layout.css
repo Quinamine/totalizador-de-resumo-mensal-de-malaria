@@ -27,10 +27,8 @@
     --greenyellow: #adff2f;
     --brown: brown;
     --reference-bgc: var(--black--alpha-8);
-    /* Tamanhos */
     --layout-width: 800px;
     --input-font-size: 15px;
-    --border-style: 1px solid var(--cor-de-borda);
 }
 @media print {
     :root {
