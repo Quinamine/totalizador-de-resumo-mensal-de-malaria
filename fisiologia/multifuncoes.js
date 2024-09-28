@@ -29,7 +29,7 @@ function destacarCelulasComConteudoOmisso() {
     let celulasSaturadas = 0;
     for(const c of celulas) {
         c.classList.remove("input--bg-color-danger");
-        if(c.value.length > 8) {
+        if(c.value.length > 9) {
             c.classList.add("input--bg-color-danger");
             celulasSaturadas++;
         }

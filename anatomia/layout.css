@@ -27,21 +27,21 @@
     --greenyellow: #adff2f;
     --brown: brown;
     --reference-bgc: var(--black--alpha-8);
-    --layout-width: 800px;
-    --input-font-size: 15px;
+    --layout-width: 956px;
+    --input-font-size: 16px;
 }
 @media print {
     :root {
+        --blue: var(--fullblack);
         --cor-de-borda: var(--fullblack);
         --cor-de-texto: var(--fullblack);
-        --gray--4: var(--fullblack)
-        --gray--a: var(--yt);
-        --gray--d: var(--yt)
+        --gray--4: var(--fullblack);
+        --cor-de-risco: var(--fullblack);
     }
 }
 #body {
     color: var(--cor-de-texto);
-    font-size: 15px;
+    font-size: 16px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -419,6 +419,9 @@
     border-top: 1px solid var(--gray--light);
     padding-top: 20px;
 }
+.artigo__titulo--no-border-t {
+    border-top: none;
+}
 .artigo__titulo--cor-discreta {
     color: var(--gray);
 }
@@ -481,9 +484,12 @@
     margin-bottom: 30px;
 }
 /* Artigo Ajuda */
+details .artigo__titulo,
+details p {
+    margin-left: 15px;
+}
 details p {
     margin-top: 10px;
-    margin-left: 15px;
 }
 .details__summary {
     padding: 10px 0;
