@@ -357,7 +357,8 @@
 }
 @media screen and (max-width: 577px) {
     .body-com-topo-propaganda .artigo--ajuda {
-        top: calc(42px + 51.19px)
+        top: calc(42px + 51.19px);
+        padding-bottom: 151.19px;
     }
 }
 @media screen and (min-width: 1024px) {

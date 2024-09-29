@@ -140,7 +140,7 @@
     font-size: 12.5px;
     font-style: italic;
     padding-left: 10px;
-    min-height: 30px;
+    margin-top: 2px;
     font-size: 14.5px;
 }
 .ficha__rodape__linha  {
@@ -150,7 +150,7 @@
     font-weight: 700;
 }
 .ficha__rodape__linha-de-assinatura {
-    margin: 13px 0 10px 10px
+    margin: 18px 0 10px 10px;
 }
 .ficha__campo-de-assinatura {
     width: 254px;
