@@ -49,8 +49,8 @@
                             <input type=checkbox id="checkbox-realcar-totais" class="header__menu__checkbox --cursor-pointer">
                             <label for="checkbox-realcar-totais" class="header__menu__label --display-flex-y-center --cursor-pointer">Realçar&nbsp;totais</label>
                         </li>
-                        <li class="header__menu__li">
-                            <button class="header__menu__btn header__menu__btn--ir-para --display-none">Ir para a linha...</button>
+                        <li class="header__menu__li --display-none">
+                            <button class="header__menu__btn header__menu__btn--ir-para">Ir para a linha...</button>
                         </li>
                         <li class="header__menu__li">
                             <button class="header__menu__btn header__menu__btn--esvaziar-ficha">Esvaziar ficha</button>
@@ -125,17 +125,17 @@
                         <div class="container-do-titulo-no --border-t --border-l">
                             <span>Nº</span>
                         </div>
-                        <div class="container-do-titulo-indicadores --border-t --border-r --border-l">
+                        <div class="container-do-titulo-indicadores --border-t --border-r-double --border-l">
                             <span>Indicadores</span>
                         </div>
-                        <div class="--border-t --border-r">
+                        <div class="--border-t --border-r-double">
                             <div class="titulo-de-col--destaque-padrao --display-flex-xy-center">
                                 <span>Unidade Sanitária</span>
                             </div>
-                            <div class="grid-template-cols-3 --border-t">
-                                <span class="--display-flex-xy-center --border-r">&lt;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">&ge;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">Total</span>
+                            <div class="grid-template-cols-3 grid-template-cols-3--last-col-grater --border-t">
+                                <span class="--border-r">&lt;5 anos</span>
+                                <span class="--border-r">&ge;5 anos</span>
+                                <span>Total</span>
                             </div>
                         </div>
                         <div class="--border-t --border-r">
@@ -143,25 +143,25 @@
                                 <span>APEs da Área de Saúde</span>
                             </div>
                             <div class="grid-template-cols-3 --border-t">
-                                <span class="--display-flex-xy-center --border-r">&lt;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">&ge;5 anos</span>
-                                <span class="--display-flex-xy-center --border-r">Total</span>
+                                <span class="--border-r">&lt;5 anos</span>
+                                <span class="--border-r">&ge;5 anos</span>
+                                <span class="--border-r">Total</span>
                             </div>
                         </div>
                     </header>
                     <div class="grid-template-cols-8">
                         <div class="ficha__col-de-linhas grid-template-rows-8 --border-b --border-l">
-                            <span class="--display-flex-xy-center --border-t">1</span>
-                            <span class="--display-flex-xy-center --border-t">2</span>
-                            <span class="--display-flex-xy-center --border-t">3</span>
-                            <span class="--display-flex-xy-center --border-t">4</span>
-                            <span class="--display-flex-xy-center --border-t">5</span>
-                            <span class="--display-flex-xy-center --border-t">6</span>
-                            <span class="--display-flex-xy-center --border-t">7</span>
-                            <span class="--display-flex-xy-center --border-t">8</span>
+                            <span class="--display-flex-xy-center --border-t-double">A</span>
+                            <span class="--display-flex-xy-center --border-t">B</span>
+                            <span class="--display-flex-xy-center --border-t">C</span>
+                            <span class="--display-flex-xy-center --border-t">D</span>
+                            <span class="--display-flex-xy-center --border-t">E</span>
+                            <span class="--display-flex-xy-center --border-t">F</span>
+                            <span class="--display-flex-xy-center --border-t">G</span>
+                            <span class="--display-flex-xy-center --border-t">H</span>
                         </div>
-                        <div class="ficha__col-de-indicadores grid-template-rows-8 --border-r --border-b --border-l">
-                            <span class="ficha__indicador --display-flex-y-center --border-t">Total de consultas externas</span>
+                        <div class="ficha__col-de-indicadores grid-template-rows-8 --border-r-double --border-b --border-l">
+                            <span class="ficha__indicador --display-flex-y-center --border-t-double">Total de consultas externas</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Doentes testados para malária por TDR</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Doentes testados para malária por HTZ</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Casos de malária confirmada (TDR¹ positivos)</span>
@@ -171,7 +171,7 @@
                             <span class="ficha__indicador --display-flex-y-center --border-t">Casos de malária tratados com ASAQ⁴</span>
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-0-59-meses --border-b" data-faixaetaria="&lt;5 anos" data-col="US">
-                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t-double --border-r">
                             <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3 class="--border-t --border-r">
                             <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3 class="--border-t --border-r">
                             <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3 class="--border-t --border-r">
@@ -181,7 +181,7 @@
                             <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3 class="--border-t --border-r">
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-5-ou-mais --border-b" data-faixaetaria="&ge;5 anos" data-col="US">
-                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t-double --border-r">
                             <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3 class="--border-t --border-r">
                             <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3 class="--border-t --border-r">
                             <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3 class="--border-t --border-r">
@@ -191,27 +191,27 @@
                             <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3 class="--border-t --border-r">
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-us total --border-b">
-                            <input type=number min="0" readonly class="l1-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l2-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l3-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l4-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l5-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l6-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l7-c3 --border-t --border-r" >
-                            <input type=number min="0" readonly class="l8-c3 --border-t --border-r">
+                            <input type=number min="0" readonly class="l1-c3 --border-t-double --border-r-double" >
+                            <input type=number min="0" readonly class="l2-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l3-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l4-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l5-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l6-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l7-c3 --border-t --border-r-double" >
+                            <input type=number min="0" readonly class="l8-c3 --border-t --border-r-double">
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-0-59-meses --border-b" data-faixaetaria="&lt;5 anos" data-col="APEs">
-                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t-double --border-r">
                             <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6 class="--border-t --border-r">
                             <span class="input--bg-color-dark"></span>
                             <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6 class="--border-t --border-r">
                             <span class="input--bg-color-dark"></span>
                             <input type=number min=0 data-total=l6-c4c5 data-totaloutput=l6-c6 class="--border-t --border-r">
                             <input type=number min=0 data-total=l7-c4c5 data-totaloutput=l7-c6 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l8-c4c5 <span class="input--bg-color-dark"></span>
+                            <span class="input--bg-color-dark"></span>
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-5-ou-mais --border-b" data-faixaetaria="&ge;5 anos" data-col="APEs">
-                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t-double --border-r">
                             <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6 class="--border-t --border-r">
                             <span class="input--bg-color-dark"></span>
                             <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6 class="--border-t --border-r">
@@ -221,7 +221,7 @@
                             <span class="input--bg-color-dark"></span>
                         </div>
                         <div class="ficha__col-de-inputs ficha__col-de-seccao-apes total --border-b">
-                            <input type=number min="0" readonly class="l1-c6 --border-t --border-r">
+                            <input type=number min="0" readonly class="l1-c6 --border-t-double --border-r">
                             <input type=number min="0" readonly class="l2-c6 --border-t --border-r">
                             <span class="input--bg-color-dark"></span>
                             <input type=number min="0" readonly class="l4-c6 --border-t --border-r">
@@ -244,8 +244,9 @@
                     </div>
                 </footer>
             </div>
-            <div class="layout-row layout-row--report-comments layout-row--no-padding">
-                <textarea class="main__campo-de-comentarios input-nao-celular input-nao-celular--font-light" id="input-comentarios" placeholder="Comentários sobre o resumo (se necessário)." rows=2></textarea>
+            <div class="layout-row layout-row--obs layout-row--no-padding"">
+                <span class="obs__label --fw-700">Observações:</span>
+                <p contenteditable="true" id="input-obs" class="obs__input"></p>
             </div>
             <div class="reference --no-print">
                 <div class="layout-row layout-row--of-reference">
@@ -320,8 +321,8 @@
                         <label for=checkbox-data>Data</label>
                     </li>
                     <li>
-                        <input type=checkbox id=checkbox-comentarios checked data-for=input-comentarios>
-                        <label for=checkbox-comentarios>Comentários</label>
+                        <input type=checkbox id=checkbox-obs checked data-for=input-obs>
+                        <label for=checkbox-obs>Observações</label>
                     </li>
                 </ul>
                 <div class=dialog-box-esvaziar-ficha__btns-container>
@@ -369,6 +370,20 @@
             </article>
             <article class="artigo artigo--ajuda layout-row layout-row--no-padding">
                 <h2 class="artigo__titulo artigo__titulo--nivel-1 artigo__titulo--ajuda-e-procedimentos">Ajuda e Procedimentos</h2>
+                <details class="artigo__details">
+                    <summary class="details__summary">Instruções de preenchimento</summary>
+                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--no-border-t">Normas para o Preenchimento do Resumo Mensal das Actividades da Malária na Unidade Sanitária e na Comunidade</h3>
+                    <p>A informação a ser preenchida neste resumo refere-se ao somatório de todos os casos de malária de todos os livros de registo da consulta externa na Unidade Sanitária.</p>
+                    <p><b>Cabeçalho:</b> Todos os campos devem ser preenchidos.</p></b> 
+                    <p><b>Linha "A" Total de consultas externas: 1.</b> Preencher o total de consultas externas para unidade sanitária para menores de 5 anos de idade e maiores ou igual a 5 anos de idade. <b>2.</b> Ainda na mesma linha nas colunas referentes aos APEs, fazer a contagem das visitas feitas pelos agentes polivalentes elementares à menores de 5 anos e maiores ou igual a 5 anos de idade.</p>
+                    <p><b>Linha "B" Doentes testados para malária por TDR:</b> fazer a contagem para menores de 5 anos e maiores ou igual a 5 anos de idade tanto para unidade sanitária assim como para os Agentes Polivalentes Elementares.</p>
+                    <p><b>Linha "C" Doentes testados para malária por HTZ (Hematozoário):</b> fazer a contagem para menores de 5 anos e maiores ou igual a 5 anos. Para esta linha, apenas deve-se preencher a informação da unidade sanitária, uma vez que os APEs não fazem HTZ.</p>  
+                    <p><b>Linha "D" Casos de malária confirmada por TDR:</b> fazer a contagem de todos os positivos por TDR para menores de 5 e maiores ou igual a 5 anos de idade tanto para unidade sanitária como para os Agentes Polivalentes Elementares.</p>
+                    <p><b>Linha "E" Casos de malária confirmada por HTZ:</b> fazer a contagem de todos os positivos por HTZ para menores de 5 e maiores ou igual a 5 anos de idade. Para esta linha, apenas deve-se preencher a informação da unidade sanitária, uma vez que os APEs não fazem HTZ.</p>
+                    <p><b>Linha "F" Casos de malária clínica (não testados):</b> fazer a contagem de todos os casos de malária tratados com antimaláricos que não tenham sido testados para menores de 5 e maiores ou igual a 5 anos de idade tanto para unidade sanitária como para os Agentes Polivalentes Elementares.</p>
+                    <p><b>Linha "G" Casos de malária tratados com AL (Arteméter e Lumefantrina):</b> fazer a contagem de todos os casos de malária tratados com AL para menores de 5 e maiores ou igual a 5 anos de idade tanto para unidade sanitária como para os Agentes Polivalentes Elementares.</p>
+                    <p><b>Linha "H" Casos de malária tratados com ASAQ (Artesunato e Amodiaquina):</b> fazer a contagem de todos os casos de malária tratados com ASAQ. Para esta linha, apenas deve-se preencher a informação da unidade sanitária, uma vez que os APEs não dispensam ASAQ.</p>
+                </details>
                 <details class="artigo__details">
                     <summary class="details__summary">Realçar totais</summary>
                     <p>Adiciona cor de fundo amarela às células dos totais. Essas têm o acesso interdito e a funcionalidade de realçá-las, permite distinguí-las facilmente das outras células. Muito útil em celulares.</p>

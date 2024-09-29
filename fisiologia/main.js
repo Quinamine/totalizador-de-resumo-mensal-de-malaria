@@ -11,10 +11,13 @@ const backup = {
     },
     saveExtraInputs() {
         const inputsNaoCelulares = document.querySelectorAll(".input-nao-celular");
+        const campoDeObs = document.querySelector(".obs__input");
         inputsNaoCelulares.forEach( inputTarget => {
             inputTarget.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-${inputTarget.id}`, inputTarget.value));
             inputTarget.value = localStorage.getItem(`${keyPrefix}-${inputTarget.id}`);
         });
+        campoDeObs.addEventListener("input", () => localStorage.setItem(`${keyPrefix}-input-obs`, campoDeObs.textContent));
+        campoDeObs.textContent = localStorage.getItem(`${keyPrefix}-input-obs`);
     }
 }
 function totalizar(inputTarget) {
