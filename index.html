@@ -92,66 +92,66 @@
                         <div class="ficha__linha-de-prov-e-distrito">
                             <div class=--display-flex-y-center>
                                 <label for=input-provincia>Província de</label>
-                                <input id=input-provincia list="datalist-provincias" class="input-nao-celular --border-b --fw-700">
+                                <input id=input-provincia list="datalist-provincias" class="input-nao-celular --fw-700">
                                 <datalist id="datalist-provincias"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-distrito>Distrito de</label>
-                                <input id=input-distrito list="datalist-distritos" class="input-nao-celular --border-b --fw-700">
+                                <input id=input-distrito list="datalist-distritos" class="input-nao-celular --fw-700">
                                 <datalist id="datalist-distritos"></datalist>
                             </div>
                         </div>
                         <div class="ficha__linha-de-us-mes-e-ano">
                             <div class=--display-flex-y-center>
                                 <label for=input-us>Unidade Sanitária:</label>
-                                <input id=input-us list="datalist-us" class="input-nao-celular --border-b --fw-700">
+                                <input id=input-us list="datalist-us" class="input-nao-celular --fw-700">
                                 <datalist id="datalist-us"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-mes>Mês:</label>
-                                <input id=input-mes list="datalist-meses" class="input-nao-celular --border-b --fw-700">
+                                <input id=input-mes list="datalist-meses" class="input-nao-celular --fw-700">
                                 <datalist id="datalist-meses"></datalist>
                             </div>
                             <div class=--display-flex-y-center>
                                 <label for=input-ano class="ficha__label-ano">Ano:</label>
-                                <input type=number min=0 id=input-ano list="datalist-ano" class="input-nao-celular --border-b --fw-700">
+                                <input type=number min=0 id=input-ano list="datalist-ano" class="input-nao-celular --fw-700">
                                 <datalist id="datalist-ano"></datalist>
                             </div>
                         </div>
                     </div>
                 </header>
                 <div class=ficha__body>
-                    <header class="ficha__body__header">
-                        <div class="container-do-titulo-no --border-t --border-l">
+                    <header class="ficha__body__header --border-l --border-t --border-r">
+                        <div class="container-do-titulo-no">
                             <span>Nº</span>
                         </div>
-                        <div class="container-do-titulo-indicadores --border-t --border-r-double --border-l">
+                        <div class="container-do-titulo-indicadores --border-r-double">
                             <span>Indicadores</span>
                         </div>
-                        <div class="--border-t --border-r-double">
-                            <div class="titulo-de-col--destaque-padrao --display-flex-xy-center">
+                        <div>
+                            <div class="--display-flex-xy-center --destaque-padrao --border-r-double">
                                 <span>Unidade Sanitária</span>
                             </div>
-                            <div class="grid-template-cols-3 grid-template-cols-3--last-col-grater --border-t">
+                            <div class="grid-template-cols-3 --border-t --border-r-double">
                                 <span class="--border-r">&lt;5 anos</span>
                                 <span class="--border-r">&ge;5 anos</span>
                                 <span>Total</span>
                             </div>
                         </div>
-                        <div class="--border-t --border-r">
-                            <div class="titulo-de-col--destaque-padrao --display-flex-xy-center">
+                        <div>
+                            <div class="--display-flex-xy-center --destaque-padrao">
                                 <span>APEs da Área de Saúde</span>
                             </div>
                             <div class="grid-template-cols-3 --border-t">
                                 <span class="--border-r">&lt;5 anos</span>
                                 <span class="--border-r">&ge;5 anos</span>
-                                <span class="--border-r">Total</span>
+                                <span>Total</span>
                             </div>
                         </div>
                     </header>
-                    <div class="grid-template-cols-8">
-                        <div class="ficha__col-de-linhas grid-template-rows-8 --border-b --border-l">
-                            <span class="--display-flex-xy-center --border-t-double">A</span>
+                    <div class="grid-template-cols-8 --border --border-t-double">
+                        <div class="ficha__col-de-linhas grid-template-rows-8">
+                            <span class="--display-flex-xy-center">A</span>
                             <span class="--display-flex-xy-center --border-t">B</span>
                             <span class="--display-flex-xy-center --border-t">C</span>
                             <span class="--display-flex-xy-center --border-t">D</span>
@@ -160,8 +160,8 @@
                             <span class="--display-flex-xy-center --border-t">G</span>
                             <span class="--display-flex-xy-center --border-t">H</span>
                         </div>
-                        <div class="ficha__col-de-indicadores grid-template-rows-8 --border-r-double --border-b --border-l">
-                            <span class="ficha__indicador --display-flex-y-center --border-t-double">Total de consultas externas</span>
+                        <div class="ficha__col-de-indicadores grid-template-rows-8 --border-l --border-r-double">
+                            <span class="ficha__indicador --display-flex-y-center">Total de consultas externas</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Doentes testados para malária por TDR</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Doentes testados para malária por HTZ</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Casos de malária confirmada (TDR¹ positivos)</span>
@@ -170,64 +170,64 @@
                             <span class="ficha__indicador --display-flex-y-center --border-t">Casos de malária tratados com AL³</span>
                             <span class="ficha__indicador --display-flex-y-center --border-t">Casos de malária tratados com ASAQ⁴</span>
                         </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-0-59-meses --border-b" data-faixaetaria="&lt;5 anos" data-col="US">
-                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t-double --border-r">
-                            <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l5-c1c2 data-totaloutput=l5-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l6-c1c2 data-totaloutput=l6-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l7-c1c2 data-totaloutput=l7-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3 class="--border-t --border-r">
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-0-59-meses --border-r" data-faixaetaria="&lt;5 anos" data-col="US">
+                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3>
+                            <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3>
+                            <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3>
+                            <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3>
+                            <input type=number min=0 data-total=l5-c1c2 data-totaloutput=l5-c3>
+                            <input type=number min=0 data-total=l6-c1c2 data-totaloutput=l6-c3>
+                            <input type=number min=0 data-total=l7-c1c2 data-totaloutput=l7-c3>
+                            <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3>
                         </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-5-ou-mais --border-b" data-faixaetaria="&ge;5 anos" data-col="US">
-                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3 class="--border-t-double --border-r">
-                            <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l5-c1c2 data-totaloutput=l5-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l6-c1c2 data-totaloutput=l6-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l7-c1c2 data-totaloutput=l7-c3 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3 class="--border-t --border-r">
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us de-5-ou-mais --border-r" data-faixaetaria="&ge;5 anos" data-col="US">
+                            <input type=number min=0 data-total=l1-c1c2 data-totaloutput=l1-c3>
+                            <input type=number min=0 data-total=l2-c1c2 data-totaloutput=l2-c3>
+                            <input type=number min=0 data-total=l3-c1c2 data-totaloutput=l3-c3>
+                            <input type=number min=0 data-total=l4-c1c2 data-totaloutput=l4-c3>
+                            <input type=number min=0 data-total=l5-c1c2 data-totaloutput=l5-c3>
+                            <input type=number min=0 data-total=l6-c1c2 data-totaloutput=l6-c3>
+                            <input type=number min=0 data-total=l7-c1c2 data-totaloutput=l7-c3>
+                            <input type=number min=0 data-total=l8-c1c2 data-totaloutput=l8-c3>
                         </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us total --border-b">
-                            <input type=number min="0" readonly class="l1-c3 --border-t-double --border-r-double" >
-                            <input type=number min="0" readonly class="l2-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l3-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l4-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l5-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l6-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l7-c3 --border-t --border-r-double" >
-                            <input type=number min="0" readonly class="l8-c3 --border-t --border-r-double">
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-us total --border-r-double">
+                            <input type=number min="0" readonly class="l1-c3" >
+                            <input type=number min="0" readonly class="l2-c3" >
+                            <input type=number min="0" readonly class="l3-c3" >
+                            <input type=number min="0" readonly class="l4-c3" >
+                            <input type=number min="0" readonly class="l5-c3" >
+                            <input type=number min="0" readonly class="l6-c3" >
+                            <input type=number min="0" readonly class="l7-c3" >
+                            <input type=number min="0" readonly class="l8-c3">
                         </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-0-59-meses --border-b" data-faixaetaria="&lt;5 anos" data-col="APEs">
-                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t-double --border-r">
-                            <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6 class="--border-t --border-r">
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-0-59-meses --border-r" data-faixaetaria="&lt;5 anos" data-col="APEs">
+                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6>
+                            <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6>
                             <span class="input--bg-color-dark"></span>
-                            <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6>
                             <span class="input--bg-color-dark"></span>
-                            <input type=number min=0 data-total=l6-c4c5 data-totaloutput=l6-c6 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l7-c4c5 data-totaloutput=l7-c6 class="--border-t --border-r">
-                            <span class="input--bg-color-dark"></span>
-                        </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-5-ou-mais --border-b" data-faixaetaria="&ge;5 anos" data-col="APEs">
-                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6 class="--border-t-double --border-r">
-                            <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6 class="--border-t --border-r">
-                            <span class="input--bg-color-dark"></span>
-                            <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6 class="--border-t --border-r">
-                            <span class="input--bg-color-dark"></span>
-                            <input type=number min=0 data-total=l6-c4c5 data-totaloutput=l6-c6 class="--border-t --border-r">
-                            <input type=number min=0 data-total=l7-c4c5 data-totaloutput=l7-c6 class="--border-t --border-r">
+                            <input type=number min=0 data-total=l6-c4c5 data-totaloutput=l6-c6>
+                            <input type=number min=0 data-total=l7-c4c5 data-totaloutput=l7-c6>
                             <span class="input--bg-color-dark"></span>
                         </div>
-                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes total --border-b">
-                            <input type=number min="0" readonly class="l1-c6 --border-t-double --border-r">
-                            <input type=number min="0" readonly class="l2-c6 --border-t --border-r">
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes de-5-ou-mais --border-r" data-faixaetaria="&ge;5 anos" data-col="APEs">
+                            <input type=number min=0 data-total=l1-c4c5 data-totaloutput=l1-c6>
+                            <input type=number min=0 data-total=l2-c4c5 data-totaloutput=l2-c6>
                             <span class="input--bg-color-dark"></span>
-                            <input type=number min="0" readonly class="l4-c6 --border-t --border-r">
+                            <input type=number min=0 data-total=l4-c4c5 data-totaloutput=l4-c6>
                             <span class="input--bg-color-dark"></span>
-                            <input type=number min="0" readonly class="l6-c6 --border-t --border-r">
-                            <input type=number min="0" readonly class="l7-c6 --border-t --border-r">
+                            <input type=number min=0 data-total=l6-c4c5 data-totaloutput=l6-c6>
+                            <input type=number min=0 data-total=l7-c4c5 data-totaloutput=l7-c6>
+                            <span class="input--bg-color-dark"></span>
+                        </div>
+                        <div class="ficha__col-de-inputs ficha__col-de-seccao-apes total">
+                            <input type=number min="0" readonly class="l1-c6">
+                            <input type=number min="0" readonly class="l2-c6">
+                            <span class="input--bg-color-dark"></span>
+                            <input type=number min="0" readonly class="l4-c6">
+                            <span class="input--bg-color-dark"></span>
+                            <input type=number min="0" readonly class="l6-c6">
+                            <input type=number min="0" readonly class="l7-c6">
                             <span class="input--bg-color-dark"></span>
                         </div>
                     </div>
@@ -236,11 +236,11 @@
                 <footer class=ficha__rodape>
                     <div class="ficha__rodape__linha ficha__rodape__linha-de-assinatura">
                         <label for=input-produzido-por>Produzido por:</label>
-                        <input id=input-produzido-por class="ficha__campo-de-assinatura input-nao-celular --border-b --fw-700">
+                        <input id=input-produzido-por class="ficha__campo-de-assinatura input-nao-celular --fw-700">
                     </div>
                     <div class="ficha__rodape__linha">
                         <label for=input-data>Data:</label>
-                        <input type=date id=input-data class="ficha__campo-de-data input-nao-celular --border-b --fw-700">
+                        <input type=date id=input-data class="ficha__campo-de-data input-nao-celular --fw-700">
                     </div>
                 </footer>
             </div>

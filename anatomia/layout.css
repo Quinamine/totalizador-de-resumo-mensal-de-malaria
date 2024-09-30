@@ -197,12 +197,14 @@
 .obs__label {
     padding: 5px;
     border-radius: 15px;
-    background-color: var(--greenyellow);
+    background-color: var(--blue--light);
+    color: var(--yt);
 }
 @media print {
     .obs__label {
         padding-left: 0;
         background-color: var(--yt);
+        color: var(--fullblack);
     }
 }
 .obs__input {
