@@ -289,7 +289,6 @@
 .footer__p__heart {
     color: var(--heart-color);
 }
-/* LINHA DE REFERENCIA */
 .reference {
     position: fixed;
     bottom: 0;
