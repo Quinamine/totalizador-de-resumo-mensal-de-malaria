@@ -68,6 +68,9 @@
     margin-left: 4px;
     text-align: left;
 }
+.ficha__header input::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
 .ficha__body__header {
     display: grid;
     grid-template-columns: 58px 400px repeat(2,calc(83px * 3));
@@ -134,7 +137,7 @@
     color: var(--yt)
 }
 .input--bg-color-dark {
-    background-color: var(--fullblack);
+    background-color: var(--black);
 }
 .ficha__legenda {
     justify-content: left;
@@ -160,5 +163,5 @@
     margin-left: 16px;
 }
 .--destaque-padrao {
-    background-color: var(--gray--d);
+    background-color: var(--gray-d);
 }
