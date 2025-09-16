@@ -14,10 +14,7 @@
 }
 .ficha__moldura-de-emblema {
     max-width: 210px;
-}
-.ficha__emblema {
-    width: 90px;
-    height: 90px;
+    margin-bottom: 4px;
 }
 .ficha__span-descricao-de-emblema {
     display: block;
