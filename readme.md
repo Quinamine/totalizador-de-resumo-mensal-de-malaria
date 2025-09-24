@@ -2,7 +2,7 @@
 
 ![Trecho do Totalizador do Resumo Mensal de Malária](imagens/totalizador-de-resumo-mensal-de-malaria.png)
 
-O **Totalizador de Resumo Mensal de Malária** é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de malária por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de malária actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+O **Totalizador de Resumo Mensal de Malária** é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de malária por meio do cálculo automático dos totais com base nos dados inseridos pelo usuário. Foi desenvolvido de acordo com o modelo da ficha de resumo mensal de malária actualmente vigente no Serviço Nacional de Saúde em Moçambique.
 
 
 ## Objectivos
