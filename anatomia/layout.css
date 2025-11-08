@@ -285,24 +285,6 @@
     background-color: var(--reference-bgc);
     z-index: 666;
 }
-@media screen and (max-width: 1023px) {
-    .reference {
-        bottom: initial;
-        top: 0;
-    }
-    .body-com-topo-info .reference {
-        top: 52.19px;
-    }
-    #header {
-        position: relative;
-        top: 28px;
-    }
-}
-@media screen and (min-width: 562px) and (max-width: 1023px) {
-    .body-com-topo-info .reference {
-        top: 35.59px;
-    }
-}
 .layout-row--of-reference {
     display: grid;
     grid-template-columns: 53px 320px 68px 70px;
